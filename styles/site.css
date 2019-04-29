@@ -1,0 +1,469 @@
+@font-face{ /*подключаем шрифты*/
+	font-family: "Open Sans";
+	src: url('../fonts/opensans.ttf');
+}
+@font-face{
+	font-family: "Huntsman";
+	src: url('../fonts/huntsman.otf');
+}
+@font-face{
+	font-family: "Exo";
+	src: url('../fonts/Exo.otf');
+}
+body, html{
+    /*background: #0e1828;*/
+	/*background: url('../images/6.jpg') ;*/
+	background-size: 100%;
+	padding: 0;/*убираем внутренние отсупы*/
+	margin: 0; /*убираем внешние отступы*/
+	font-family: "Open Sans", sans-serif; /*задействуем шрифт Open Sans, если не подключится то используем шрифт без засечек*/
+	color: #5e5e5e; /*меняем цвет шрифта*/
+	height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%
+} 
+.content {
+  flex: 1 0 auto;
+  }
+header{
+	width: 100%; /*занимаем всю ширину страницы*/
+	height: 50px; /*задаем высоту*/
+	border-bottom: 1px solid rgba(100, 149, 237, 0.5); /*полоска*/
+	background-color: #292929;
+
+
+}
+
+
+#headerInside{
+	width: 90%;
+	margin: 0 50px;
+}
+#logo {
+	width: 50px;
+	height: 50px;
+	float: left;
+	background: url('../images/logo.jpg') no-repeat;
+	background-size: contain;
+    margin-left: 50px;
+}
+#companyName { 
+	font-family: "Huntsman", sans-serif;
+	float: left;
+	margin-left: 15px;
+	font-size: 22px;
+	line-height: 50px; /*высота строки текста */
+	color : white;
+}
+#navWrap {
+	align-items: center;
+	flex-direction: row;
+	display: flex;
+	height: 50px;
+	width: 400px;
+	float: center;
+	padding-left: 150px;
+	margin: 0;
+}
+#navWrap a {
+
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	padding: 0 15px;
+	color: white;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+}
+#navWrap a:last-child {
+	border-left: :  none;
+}
+#navWrap a:hover{ 
+	background: #1E90FF;
+}
+#authorez {
+	font-size: 15px;
+	color : white;
+	float: right;
+	margin-left: 50px;
+    margin-right: 30px;
+}
+#authorez a {
+	margin-top: 5px;	
+	padding: 5px 25px;
+	color: black;
+	height: 40px;
+	line-height: 40px;
+	text-decoration: none;
+	border : 1px solid #1E90FF;
+	
+	background: white;
+	border-radius: 15px;
+
+}
+#authorez a:hover 
+{
+	background: #1E90FF;
+}
+.main{
+    margin-bottom:  85px ;
+}
+#promoText {
+ 
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: Exo, sans-serif;
+    
+    
+}
+
+.slider{
+	width: 1000px; /*ширина слайдера*/
+	margin: 50px auto 20px auto; /*отступы слайдера*/
+}
+/*стили для слайдера*/
+.slider_1_img{
+	width: 1000px;
+	height: 600px;
+}
+.slider_1{
+	position: relative;
+}
+.clider_desc{
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0, 0.7);
+	width: 100%;
+	height: 60px;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+
+}
+/*стили футор*/
+footer {
+	flex: 0 0 auto;
+    float: left;
+    width: 100%;
+    height: 125px;
+    color: #fff;
+    border-top: 1px solid rgba(100, 149, 237, 0.5);
+    background-image: url("../images/back.png");
+}
+
+#footerInside {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#copyrights {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#social {
+    padding-top: 20px;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socialItem {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+#contacts {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 340px;
+}
+
+.contactWrap {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+.contactIcon {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+#footerNav {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    width: 200px;
+}
+
+#footerNav a {
+    display: block;
+    text-align: right;
+    color: #e6e09a;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+#footerNav a:hover {
+    color: #fff;
+}
+/*стили каталог*/
+.shopUnit {
+	background-color: black;
+	float: left;
+    width: 28%;
+    padding: 5px;
+    border: 1px solid rgba(225, 225, 225, 0.7);
+    margin-right: 6.365%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.shopUnit:nth-child(3n) {
+    margin-right: 0;
+}
+
+.shopUnitName {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Exo, sans-serif;
+    font-size: 1.2em;
+}
+
+.shopUnit img {
+    width: 100%;
+    height: 231px;
+}
+
+.shopUnitShortDesc {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.shopUnitPrice {
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* ---------------- НАЧАЛО стилей для страницы с открытым товаром ----------------------- */
+
+#openedProduct-img {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+}
+
+#openedProduct-img img {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgba(225, 225, 225, 0.7);
+}
+
+#openedProduct-content {
+    float: left;
+    width: 67%;
+}
+
+#openedProduct-name {
+    font-family: Exo, sans-serif;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+#openedProduct-desc {
+    margin-top: 20px;
+}
+
+#openedProduct-price {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+/* ---------------- КОНЕЦ стилей для страниы с открытым товаром -------------------------- */
+/* Форма логина от бониславы 
+.container 
+{
+    width: 450px;
+    height: 500px;
+    background-color: #292929;
+    margin : 0 auto 100px auto;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    
+}
+.container img
+{
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+
+}
+input[type="text"], input[type="password"]
+{
+    width: 300px; 
+    height :50px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    padding-left: 10px;
+
+}
+.submiti 
+{
+    padding: 13px 30px;
+    margin: 5px 0 10px 0;
+    font-size: 15px;
+    color : #fff;
+    background-color: #1E90FF;
+    border:none;
+    cursor: pointer;
+}
+.close {
+    display: inline-block;
+    
+    color: #0000cc;
+    padding: 0 12px;
+    margin: 10px;
+    text-decoration: none;
+    background: #f2f2f2;
+    font-size: 14pt;
+    cursor:pointer;
+}
+      .close:hover {background: #e6e6ff;}
+.vostkont
+{
+     margin-bottom: :20px;
+     color:white;
+     text-decoration: none;
+}
+СТИЛИ ВХОД/РЕГИСТРАЦИЯ 
+.tabs{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    line-height: 50px; 
+    margin : 100px auto 0 auto;
+    text-decoration: none;
+    color: white;
+    cursor:default;
+    background-color: #292929;
+    width: 450px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;   
+}
+.tab{
+    padding-left: 10px;
+}
+.wrapper2 .active { color: #1E90FF; }
+.fa.fa-id-card{
+    padding-right: 10px; 
+}
+*/
+/*УРАААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА*/
+/*выравеиваем по середине*/
+.dws-wrapper {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+.dws-form{
+    background-color: rgba(41,41,41, 0.7);
+    font-family: "Exo", sans-serif;
+    padding: 10px;
+    width: 330px;
+}
+.dws-form a {
+    text-decoration: none;
+    transform: .5s; /*плавная анимация*/
+    color: #298cad;
+}
+.dws-form a:hover{
+color: #36d2ff;
+}
+.dws-form input{
+    display: block;
+    width: 100%;
+}
+.tab-form{
+    background-color: white;
+    display: none;
+    padding: 30px 20px 20px;
+}
+.tab-form.active{
+    display: block;
+}
+label.tab{
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 3px 3px 0 0;
+    margin-bottom: -1px;
+    cursor: pointer;
+}
+label.tab.active{
+    background-color: white;
+    color: #1E90FF;
+}
+/*формы*/
+.input{
+    font-size: 16px;
+    border: 2px solid #e9eaea;
+    padding: 12px 14px;
+    box-sizing: border-box; /*чтоб поля не вылезали*/
+    margin-bottom: 22px;
+    
+}
+a.button_entrance{
+    background: #1E90FF;
+    color: white;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    line-height: 46px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.error, .success{
+ position: absolute;
+ top: 0;
+ left: 0;
+ padding: 7px 5px 7px 5px;
+ border-bottom-right-radius: 10px;
+ display: none;
+}
+.error {
+    background: white;
+    border: 1px solid #326db5;
+}
+.success {
+    background: #b9d3f2;
+    border: 1px solid #326db5;
+}
+
+
